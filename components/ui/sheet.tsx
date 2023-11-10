@@ -7,6 +7,12 @@ import { X } from "lucide-react";
 
 import { cn } from "@/lib/utils";
 
+declare module "@radix-ui/react-dialog" {
+    interface DialogPortalProps {
+        className?: string;
+    }
+}
+
 const Sheet = SheetPrimitive.Root;
 
 const SheetTrigger = SheetPrimitive.Trigger;
